@@ -1,7 +1,6 @@
 {
   "name": "eslint-config-rbower",
   "version": "1.0.0",
-  "private": true,
   "description": "R-Bower's ESLint config for React and TypeScript",
   "keywords": [
     "eslint",
