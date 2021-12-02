@@ -230,7 +230,15 @@ module.exports = {
         "no-undef": "error",
         "no-unused-vars": "off",
         "prefer-template": ["error"],
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error", {
+          "bracketSpacing": false,
+          "endOfLine": "auto",
+          "jsxSingleQuote": false,
+          "printWidth": 80,
+          "semi": false,
+          "singleQuote": false,
+          "trailingComma": "all"
+        }],
         "sort-destructure-keys/sort-destructure-keys": "error",
         "sort-imports": [
           "error",
