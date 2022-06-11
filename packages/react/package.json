@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/R-Bower/eslint-config.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.30.0",
@@ -21,6 +21,5 @@
   },
   "peerDependencies": {
     "eslint": ">=8.17.0"
-  },
-  "gitHead": "7bbd4501c2d9672c803f4cffa1b4e914d56f80a8"
+  }
 }
