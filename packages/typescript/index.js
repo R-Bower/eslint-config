@@ -34,6 +34,7 @@ module.exports = {
         "sort-destructure-keys",
         "sort-keys-fix",
         "typescript-sort-keys",
+        "unused-imports"
       ],
       rules: {
         "@typescript-eslint/ban-ts-comment": "off",
