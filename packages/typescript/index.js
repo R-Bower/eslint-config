@@ -12,134 +12,11 @@ module.exports = {
   },
   ignorePatterns: ["node_modules", "dist"],
   overrides: [
-    // Playwright
-    {
-      extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:jsx-a11y/recommended",
-        "plugin:playwright/playwright-test",
-      ],
-      files: ["**/*.pw.ts"],
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-        ecmaVersion: 2022,
-        sourceType: "module",
-      },
-      plugins: [
-        "@typescript-eslint",
-        "import",
-        "jsx-a11y",
-        "jest",
-        "jest-dom",
-        "prettier",
-        "sort-destructure-keys",
-        "sort-keys-fix",
-        "testing-library",
-        "typescript-sort-keys",
-      ],
-      rules: {
-        "jest/no-disabled-tests": "warn",
-        "jest/no-focused-tests": "error",
-        "jest/no-identical-title": "error",
-        "jest/prefer-to-have-length": "warn",
-        "jest/valid-expect": "error",
-        "playwright/missing-playwright-await": [
-          "error",
-          {customMatchers: ["toBeCustomThing"]},
-        ],
-      },
-    },
-    // Unit tests
-    {
-      files: ["**/*.{spec,unit}.{tsx,ts}"],
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-        ecmaVersion: 2020,
-        sourceType: "module",
-      },
-      plugins: [
-        "@typescript-eslint",
-        "import",
-        "jsx-a11y",
-        "jest-dom",
-        "prettier",
-        "react",
-        "react-hooks",
-        "sort-destructure-keys",
-        "sort-keys-fix",
-        "testing-library",
-        "typescript-sort-keys",
-      ],
-    },
-    // React
-    {
-      extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:jsx-a11y/recommended",
-      ],
-      files: [
-        "**/*.{tsx,jsx}",
-        "packages/libs/react-*/**/*.{ts,js,json}",
-        "packages/apps/**/*.{ts,js,json}",
-      ],
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-        ecmaVersion: 2021,
-        sourceType: "module",
-      },
-      rules: {
-        "jsx-a11y/no-autofocus": "off",
-        "no-prototype-builtins": "off",
-        "react/jsx-curly-brace-presence": [
-          "error",
-          {
-            props: "always",
-          },
-        ],
-        "react/jsx-key": "error",
-        "react/jsx-sort-props": [
-          "error",
-          {
-            reservedFirst: ["key", "ref"],
-          },
-        ],
-        "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error",
-        "react/no-array-index-key": "off",
-        "react-hooks/exhaustive-deps": [
-          "error",
-          {
-            enableDangerousAutofixThisMayCauseInfiniteLoops: true,
-          },
-        ],
-        "react-hooks/rules-of-hooks": "error",
-      },
-      settings: {
-        "import/resolver": {
-          node: {
-            extensions: [".js", ".jsx", ".ts", ".tsx"],
-          },
-          typescript: {},
-        },
-      },
-    },
     {
       // General TypeScript/JavaScript
       extends: [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:jsx-a11y/recommended",
+        "plugin:@typescript-eslint/recommended"
       ],
       files: ["**/*.{tsx,ts,jsx,js,json}"],
       parser: "@typescript-eslint/parser",
@@ -153,13 +30,9 @@ module.exports = {
       plugins: [
         "@typescript-eslint",
         "import",
-        "jsx-a11y",
         "prettier",
-        "react",
-        "react-hooks",
         "sort-destructure-keys",
         "sort-keys-fix",
-        "testing-library",
         "typescript-sort-keys",
       ],
       rules: {
@@ -202,16 +75,6 @@ module.exports = {
             "newlines-between": "always",
             pathGroups: [
               {
-                group: "external",
-                pattern: "react",
-                position: "before",
-              },
-              {
-                group: "external",
-                pattern: "@qui/**",
-                position: "after",
-              },
-              {
                 group: "internal",
                 pattern: "~*/**",
               },
@@ -219,7 +82,6 @@ module.exports = {
             pathGroupsExcludedImportTypes: ["react"],
           },
         ],
-        "jsx-a11y/no-autofocus": "off",
         "multiline-comment-style": ["off"],
         "no-const-assign": "error",
         "no-duplicate-imports": "error",
