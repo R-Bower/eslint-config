@@ -1,7 +1,9 @@
 {
   "name": "eslint-config-rbower-react",
   "version": "1.0.0",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "author": "Ryan Bower",
   "license": "MIT",
   "main": "index.js",

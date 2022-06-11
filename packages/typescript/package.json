@@ -2,7 +2,9 @@
   "name": "eslint-config-rbower-typescript",
   "version": "1.0.0",
   "description": "R-Bower's ESLint config for TypeScript",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/R-Bower/eslint-config.git"
