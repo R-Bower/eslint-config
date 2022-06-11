@@ -31,5 +31,6 @@
     "eslint": ">=8.17.0",
     "typescript": ">=4.6.3"
   },
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "gitHead": "7bbd4501c2d9672c803f4cffa1b4e914d56f80a8"
 }
