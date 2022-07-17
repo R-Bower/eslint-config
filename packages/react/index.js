@@ -21,6 +21,19 @@ module.exports = {
       ],
       files: ["**/*.{tsx,jsx}"],
       parser: "@typescript-eslint/parser",
+      plugins: [
+        "@typescript-eslint",
+        "import",
+        "jsx-a11y",
+        "jest-dom",
+        "prettier",
+        "react",
+        "react-hooks",
+        "sort-destructure-keys",
+        "sort-keys-fix",
+        "testing-library",
+        "typescript-sort-keys",
+      ],
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
