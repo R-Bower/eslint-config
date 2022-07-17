@@ -3,7 +3,6 @@ module.exports = {
     browser: true,
     es6: true,
     es2020: true,
-    jest: true,
     node: true,
   },
   globals: {
@@ -25,7 +24,6 @@ module.exports = {
         "@typescript-eslint",
         "import",
         "jsx-a11y",
-        "jest-dom",
         "prettier",
         "react",
         "react-hooks",
