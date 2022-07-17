@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rbower-typescript",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "R-Bower's ESLint config for TypeScript",
   "files": [
     "index.js"
