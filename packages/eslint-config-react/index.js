@@ -1,46 +1,30 @@
+/** @type {import("eslint").ESLint.ConfigData} */
 module.exports = {
   env: {
     browser: true,
     es6: true,
-    es2020: true,
+    es2022: true,
     node: true,
   },
   globals: {
     JSX: true,
+    ParentNode: true,
     RequestInit: true,
   },
-  ignorePatterns: ["node_modules", "dist"],
   overrides: [
-    // React
     {
-      extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:jsx-a11y/recommended",
-      ],
+      extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
       files: ["**/*.{tsx,jsx}"],
       parser: "@typescript-eslint/parser",
-      plugins: [
-        "@typescript-eslint",
-        "import",
-        "jsx-a11y",
-        "prettier",
-        "react",
-        "react-hooks",
-        "sort-destructure-keys",
-        "sort-keys-fix",
-        "testing-library",
-        "typescript-sort-keys",
-      ],
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
         },
-        ecmaVersion: 2021,
+        ecmaVersion: 2022,
         sourceType: "module",
       },
+      plugins: ["@typescript-eslint", "prettier", "react", "react-hooks"],
       rules: {
-        "jsx-a11y/no-autofocus": "off",
         "no-prototype-builtins": "off",
         "react/jsx-curly-brace-presence": [
           "error",
@@ -66,19 +50,14 @@ module.exports = {
         ],
         "react-hooks/rules-of-hooks": "error",
       },
-      settings: {
-        "import/resolver": {
-          node: {
-            extensions: [".js", ".jsx", ".ts", ".tsx"],
-          },
-          typescript: {},
-        },
-      },
     },
   ],
   settings: {
-    react: {
-      version: "detect",
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+      typescript: {},
     },
   },
 }
