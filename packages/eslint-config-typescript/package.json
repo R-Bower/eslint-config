@@ -1,5 +1,5 @@
 {
-  "name": "@rbower/eslint-config-typescript",
+  "name": "eslint-config-rbower-typescript",
   "version": "2.0.0",
   "description": "R-Bower's ESLint config for TypeScript",
   "files": [
