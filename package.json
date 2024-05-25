@@ -1,5 +1,5 @@
 {
-  "name": "@rbower/eslint-config",
+  "name": "@rbow/eslint-config",
   "version": "1.0.0",
   "description": "R-Bower's ESLint configs for React and TypeScript",
   "scripts": {
