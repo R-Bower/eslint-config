@@ -1,6 +1,6 @@
 {
-  "name": "@rbow/eslint-config",
-  "version": "1.0.0",
+  "name": "rbower-eslint-config",
+  "version": "0.0.0",
   "description": "R-Bower's ESLint configs for React and TypeScript",
   "scripts": {
     "bump": "lerna version --include-merged-tags"

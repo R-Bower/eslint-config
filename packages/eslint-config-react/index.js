@@ -26,11 +26,10 @@ module.exports = {
       plugins: ["@typescript-eslint", "prettier", "react", "react-hooks"],
       rules: {
         "no-prototype-builtins": "off",
+        "react/jsx-boolean-value": ["error", "never"],
         "react/jsx-curly-brace-presence": [
           "error",
-          {
-            props: "always",
-          },
+          {children: "never", propElementValues: "always", props: "never"},
         ],
         "react/jsx-key": "error",
         "react/jsx-sort-props": [
@@ -42,6 +41,7 @@ module.exports = {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
         "react/no-array-index-key": "off",
+        "react/self-closing-comp": ["error", {component: true, html: false}],
         "react-hooks/exhaustive-deps": [
           "error",
           {
