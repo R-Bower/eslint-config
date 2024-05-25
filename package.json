@@ -2,6 +2,9 @@
   "name": "rbower-eslint-config",
   "version": "1.0.0",
   "description": "R-Bower's ESLint configs for React and TypeScript",
+  "scripts": {
+    "bump": "lerna version --include-merged-tags"
+  },
   "keywords": [
     "eslint",
     "config",
@@ -22,6 +25,7 @@
     "@types/node": "^20.12.12",
     "eslint": "^8.57.0",
     "@lerna-lite/changed": "^3.4.0",
+    "@lerna-lite/cli": "^3.4.0",
     "@lerna-lite/version": "^3.4.0",
     "typescript": "^5.4.5"
   }
