@@ -1,6 +1,6 @@
 {
-  "name": "rbower-eslint-config-react",
-  "version": "0.0.0",
+  "name": "eslint-config-rbower-react",
+  "version": "1.0.0",
   "files": [
     "index.js"
   ],
