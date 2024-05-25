@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "R-Bower's ESLint configs for React and TypeScript",
   "scripts": {
-    "bump": "lerna version --include-merged-tags"
+    "bump": "lerna publish"
   },
   "keywords": [
     "eslint",
@@ -26,6 +26,7 @@
     "eslint": "^8.57.0",
     "@lerna-lite/changed": "^3.4.0",
     "@lerna-lite/cli": "^3.4.0",
+    "@lerna-lite/publish": "^3.4.0",
     "@lerna-lite/version": "^3.4.0",
     "typescript": "^5.4.5"
   }
