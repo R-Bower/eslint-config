@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-rbower-typescript",
-  "version": "3.0.1",
+  "name": "@rbower/eslint-config-typescript",
+  "version": "1.0.0",
   "description": "R-Bower's ESLint config for TypeScript",
   "files": [
     "comment-length.js",
