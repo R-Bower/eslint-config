@@ -81,6 +81,11 @@ module.exports = {
           },
           {
             group: "external",
+            pattern: "solid-js",
+            position: "before",
+          },
+          {
+            group: "external",
             pattern: "@qui/**",
             position: "after",
           },
