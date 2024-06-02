@@ -3,8 +3,11 @@
   "version": "3.0.0",
   "description": "R-Bower's ESLint config for TypeScript",
   "files": [
-    "index.js",
-    "comment-length.js"
+    "comment-length.js",
+    "naming-convention.js",
+    "package.json",
+    "recommended.js",
+    "style-guide.js"
   ],
   "repository": {
     "type": "git",
