@@ -26,6 +26,19 @@ module.exports = {
       plugins: ["@typescript-eslint", "prettier", "react", "react-hooks"],
       rules: {
         "no-prototype-builtins": "off",
+        "no-restricted-imports": [
+          "error",
+          {
+            paths: [
+              {
+                importNames: ["default"],
+                message:
+                  "the React default import is no longer required since v17. You may need to update your tsconfig.compileOptions.jsx setting to 'react-jsx' to allow this",
+                name: "react",
+              },
+            ],
+          },
+        ],
         "react/jsx-boolean-value": ["error", "never"],
         "react/jsx-curly-brace-presence": [
           "error",
